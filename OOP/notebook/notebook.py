@@ -37,7 +37,7 @@ class NoteBook:
         根据id查找note
         '''
         for note in self.notes:
-            if note.id == id:
+            if str(note.id) == str(id):
                 return note
         raise ValueError('can not find note whose id is {}'.format(id))
 
